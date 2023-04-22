@@ -1,8 +1,14 @@
+:root {
+  --color-EEEEEE: #eeeeee;
+  --color-00ADB5: #00adb5;
+  --color-393E46: #393e46;
+  --color-222831: #222831;
+  --color-00565a: #00565a;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -11,3 +17,74 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* text color */
+.text-custom-blue {
+    color: var(--color-00ADB5);
+}
+
+.text-custom-gray {
+  color: var(--color-393E46);
+}
+
+.text-custom-black {
+  color: var(--color-222831);
+}
+
+.text-custom-black:hover {
+  color: var(--color-00ADB5);
+}
+/* text color end*/
+
+
+/* gap */
+
+.gap-5 {
+  gap: 5px;
+}
+
+.gap-10 {
+  gap: 10px;
+}
+
+.gap-15 {
+  gap: 15px;
+}
+/* gap end*/
+
+/* button color */
+.btn-custom-blue-bg-white{
+  font-size: large;
+  font-weight: bold;
+  border-color: var(--color-00ADB5);
+  color: var(--color-00ADB5);
+  border-radius: 7px;
+}
+.btn-custom-blue-bg-white:hover{
+  background-color: var(--color-00ADB5);
+  font-weight: bold;
+  color: var(--color-EEEEEE);
+}
+
+.btn-custom-blue  {
+  font-size: large;
+  background-color: var(--color-00ADB5);
+  font-weight: bold;
+  border-color: var(--color-00ADB5);
+  color: var(--color-EEEEEE);
+  border-radius: 7px;
+}
+
+.btn-custom-blue:hover{
+  background-color: var(--color-00565a);
+  font-weight: bold;
+  color: var(--color-EEEEEE);
+  border-radius: 7px;
+}
+
+/* button color end*/
