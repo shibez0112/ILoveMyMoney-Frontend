@@ -7,7 +7,7 @@ const Navbar = () => {
         <div className="row">
           <div className="d-flex justify-content-between align-items-center">
             <div className="col-4">
-              <Link>
+              <Link to={"/"}>
                 <img
                   className="img-fluid w-50"
                   src="/img/logo.png"
@@ -18,7 +18,7 @@ const Navbar = () => {
             <div className="col-3">
               <ul className="d-flex list-unstyled justify-content-between my-2">
                 <li>
-                  <Link className="link text-custom-black" to={"/about"}>About Us</Link>
+                  <Link className="link text-custom-black" to={"/about"}>About</Link>
                 </li>
                 <li>
                   <Link className="link text-custom-black" to={"/privacy"}>Privacy</Link>

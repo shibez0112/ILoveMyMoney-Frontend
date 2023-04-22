@@ -6,6 +6,10 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Login from "./routes/Login";
 import Home from "./routes/Home";
 import App from "./App";
+import HomeBody from "./components/Home/HomeBody";
+import About from "./components/About/About";
+import Privacy from "./components/Privacy/Privacy";
+import Contact from "./components/Contact/Contact";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -13,10 +17,13 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path="/login" element={<Login />}></Route>
-        <Route path="/" element={<Home />}></Route>
-        <Route element={<App />}>
-          
+        <Route path="/" element={<Home />}>
+          <Route index element={<HomeBody />}></Route>
+          <Route path="/about" element={<About />}></Route>
+          <Route path="/privacy" element={<Privacy />}></Route>
+          <Route path="/contact" element={<Contact />}></Route>
         </Route>
+        <Route element={<App />}></Route>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
