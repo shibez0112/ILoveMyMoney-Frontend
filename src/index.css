@@ -11,7 +11,10 @@ body {
   font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+  
 }
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -41,6 +44,16 @@ code {
 }
 /* text color end*/
 
+/* background color */
+.bg-custom-dark-blue {
+  background-color: var(--color-00565a);
+}
+
+.bg-custom-white {
+  background-color: var(--color-EEEEEE);
+}
+
+/* background color end*/
 
 /* gap */
 
@@ -88,3 +101,15 @@ code {
 }
 
 /* button color end*/
+
+.logo-2 {
+  height: 120px;
+  width: 225px;
+}
+
+.card {
+  border-radius: 30px;
+  width: 700px ;
+  height: 400px;
+  margin-top: 90px;
+}
