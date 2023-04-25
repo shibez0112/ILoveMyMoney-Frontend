@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Signin = () => {
   return (
     <>
-      <div className="container-xxl">
+      <div className="container-fluid">
         <div className="row vh-100 vw-100 position-relative">
           <div className="bg-custom-dark-blue h-50">
             <div className="position-absolute py-5 start-50 translate-middle-x">

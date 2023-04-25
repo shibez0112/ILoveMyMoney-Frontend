@@ -25,7 +25,7 @@ root.render(
           <Route path="/privacy" element={<Privacy />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
         </Route>
-        <Route element={<App />}></Route>
+        <Route path="/user" element={<App />}></Route>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

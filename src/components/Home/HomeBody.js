@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const HomeBody = () => {
   return (
     <div className="home-body py-5">
-      <div className="container-xl">
+      <div className="container-fluid">
         <div className="row">
           <div>
             <h1 className="text-center display-2 text-custom-blue">
@@ -19,12 +19,13 @@ const HomeBody = () => {
             </p>
           </div>
           <div className="d-flex justify-content-center gap-5 ">
-            <div className="btn btn-custom-blue-bg-white px-4">
-              <Link className="link" to={"/signin"}>Sign In</Link>
-            </div>
-            <div className="btn btn-custom-blue px-4">
-              <Link className="link"to={"/signup"}>Sign Up</Link>
-            </div>
+            <Link className="link" to={"/signin"}>
+              <div className="btn btn-custom-blue-bg-white px-4">Sign In</div>
+            </Link>
+
+            <Link className="link" to={"/signup"}>
+              <div className="btn btn-custom-blue px-4">Sign Up</div>
+            </Link>
           </div>
         </div>
       </div>
