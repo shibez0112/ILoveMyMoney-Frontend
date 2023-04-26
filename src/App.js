@@ -1,42 +1,37 @@
 import { Layout, Space } from "antd";
 import React from "react";
+import Sidebar from "./components/Sidebar/Sidebar";
+import HeaderBar from "./components/Header/HeaderBar";
 const { Header, Footer, Sider, Content } = Layout;
 
 const App = () => {
   const headerStyle = {
-    textAlign: "center",
-    color: "#fff",
-    height: "10vh",
-    paddingInline: 50,
-    lineHeight: "64px",
-    backgroundColor: "#7dbcea",
+    height: "45px",
+    lineHeight: "20px",
+    backgroundColor: "#FFFFFF",
   };
   const contentStyle = {
     textAlign: "center",
     minHeight: 120,
     lineHeight: "120px",
     color: "#fff",
-    backgroundColor: "#108ee9",
+    backgroundColor: "#eeeeee",
   };
   const siderStyle = {
-    textAlign: "center",
-    lineHeight: "100vh",
-    color: "#fff",
-    backgroundColor: "#3ba0e9",
-  };
-  const footerStyle = {
-    textAlign: "center",
-    color: "#fff",
-    backgroundColor: "#7dbcea",
+    backgroundColor: "#FFFFFF",
+    boxShadow: "0px 0px 5px 0px #888888",
   };
 
   return (
     <Layout>
-      <Sider style={siderStyle}>Sider</Sider>
+      <Sider style={siderStyle} width={70}>
+        <Sidebar />
+      </Sider>
       <Layout>
-        <Header style={headerStyle}>Header</Header>
-        <Content style={contentStyle}>Content</Content>
-        <Footer style={footerStyle}>Footer</Footer>
+        <Header style={headerStyle}>
+          <HeaderBar />
+        </Header>
+        <Content style={contentStyle}></Content>
       </Layout>
     </Layout>
   );

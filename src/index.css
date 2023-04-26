@@ -113,3 +113,16 @@ code {
   height: 400px;
   margin-top: 90px;
 }
+
+.header-container {
+  height: "10vh";
+  margin: 0;
+  padding: 0;
+}
+
+/* Ant Design custom */
+.ant-menu-item {
+  display: flex;
+  justify-content: center;
+}
+/* Ant Design custom end*/
