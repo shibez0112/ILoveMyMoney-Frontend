@@ -1,8 +1,8 @@
-import { Layout, Space } from "antd";
+import { Layout } from "antd";
 import React from "react";
 import Sidebar from "./components/Sidebar/Sidebar";
 import HeaderBar from "./components/Header/HeaderBar";
-const { Header, Footer, Sider, Content } = Layout;
+const { Header, Sider, Content } = Layout;
 
 const App = () => {
   const headerStyle = {

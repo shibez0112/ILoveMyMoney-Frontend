@@ -8,16 +8,14 @@
 
 body {
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow: hidden;
-  
 }
 
-
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
@@ -28,7 +26,7 @@ code {
 
 /* text color */
 .text-custom-blue {
-    color: var(--color-00ADB5);
+  color: var(--color-00ADB5);
 }
 
 .text-custom-gray {
@@ -56,6 +54,9 @@ code {
 /* background color end*/
 
 /* gap */
+.gap-3 {
+  gap: 3px;
+}
 
 .gap-5 {
   gap: 5px;
@@ -71,20 +72,20 @@ code {
 /* gap end*/
 
 /* button color */
-.btn-custom-blue-bg-white{
+.btn-custom-blue-bg-white {
   font-size: large;
   font-weight: bold;
   border-color: var(--color-00ADB5);
   color: var(--color-00ADB5);
   border-radius: 7px;
 }
-.btn-custom-blue-bg-white:hover{
+.btn-custom-blue-bg-white:hover {
   background-color: var(--color-00ADB5);
   font-weight: bold;
   color: var(--color-EEEEEE);
 }
 
-.btn-custom-blue  {
+.btn-custom-blue {
   font-size: large;
   background-color: var(--color-00ADB5);
   font-weight: bold;
@@ -93,7 +94,7 @@ code {
   border-radius: 7px;
 }
 
-.btn-custom-blue:hover{
+.btn-custom-blue:hover {
   background-color: var(--color-00565a);
   font-weight: bold;
   color: var(--color-EEEEEE);
@@ -102,6 +103,7 @@ code {
 
 /* button color end*/
 
+/* Login/Logout card */
 .logo-2 {
   height: 120px;
   width: 225px;
@@ -109,20 +111,32 @@ code {
 
 .card {
   border-radius: 30px;
-  width: 700px ;
+  width: 700px;
   height: 400px;
   margin-top: 90px;
 }
+/* Login/Logout card end*/
 
+/* Header custom */
 .header-container {
   height: "10vh";
   margin: 0;
   padding: 0;
 }
 
+
+/* Header custom end*/
+
 /* Ant Design custom */
 .ant-menu-item {
   display: flex;
   justify-content: center;
+}
+:where(.css-dev-only-do-not-override-1fviqcj).ant-menu-light
+  .ant-menu-item-selected,
+:where(.css-dev-only-do-not-override-1fviqcj).ant-menu-light
+  > .ant-menu
+  .ant-menu-item-selected {
+  color: var(--color-00ADB5);
 }
 /* Ant Design custom end*/
