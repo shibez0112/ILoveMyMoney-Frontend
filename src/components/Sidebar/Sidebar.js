@@ -8,22 +8,22 @@ const items = [
   {
     label: "Navigation One",
     key: "mail",
-    icon: <MdMenu size={20}/>,
+    icon: <MdMenu size={25}/>,
   },
   {
     label: "Wallet",
     key: "wallet",
-    icon: <MdAccountBalanceWallet size={20}/>,
+    icon: <MdAccountBalanceWallet size={25}/>,
   },
   {
     label: "Report",
     key: "report",
-    icon: <TbReportAnalytics size={20}/>,
+    icon: <TbReportAnalytics size={25}/>,
   },
   {
     label: "Help",
     key: "help",
-    icon: <MdHelpOutline size={20}/>,
+    icon: <MdHelpOutline size={25}/>,
   },
 ];
 

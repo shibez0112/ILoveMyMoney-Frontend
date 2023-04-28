@@ -6,7 +6,7 @@ const { Header, Sider, Content } = Layout;
 
 const App = () => {
   const headerStyle = {
-    height: "45px",
+    height: "60px",
     lineHeight: "20px",
     backgroundColor: "#FFFFFF",
   };
@@ -24,7 +24,7 @@ const App = () => {
 
   return (
     <Layout>
-      <Sider style={siderStyle} width={70}>
+      <Sider style={siderStyle} width={80}>
         <Sidebar />
       </Sider>
       <Layout>

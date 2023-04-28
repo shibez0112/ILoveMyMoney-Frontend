@@ -1,10 +1,10 @@
 import { React, Link } from "react";
-import { BiWallet, BiSearch } from "react-icons/bi";
+import { BiWallet, BiSearch, BiFilterAlt } from "react-icons/bi";
 import { IoMdArrowDropdown } from "react-icons/io";
 
 const HeaderBar = () => {
   return (
-    <div className="d-flex justify-content-between">
+    <div className="d-flex justify-content-between py-1">
       <div className="d-flex header-items-left position-relative">
         <div className="col-1 pt-2">
           <BiWallet size={25} />
@@ -48,10 +48,11 @@ const HeaderBar = () => {
         </div>
       </div>
       <div className="d-flex justify-content-center align-items-center gap-3">
+        <BiFilterAlt size={25} />
         <BiSearch size={25} />
         <button
           className="btn btn-custom-blue m-2"
-          style={{ fontSize: "12px" }}
+          style={{ fontSize: "14px" }}
         >
           Add new transaction
         </button>
