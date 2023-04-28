@@ -1,4 +1,4 @@
-import { React, Link } from "react";
+import { React } from "react";
 import { BiWallet, BiSearch, BiFilterAlt } from "react-icons/bi";
 import { IoMdArrowDropdown } from "react-icons/io";
 
@@ -16,7 +16,6 @@ const HeaderBar = () => {
             </div>
             <div className="dropdown">
               <IoMdArrowDropdown
-                href="#"
                 className="dropdown-toggle"
                 role="button"
                 id="dropdownMenuLink"
@@ -30,12 +29,12 @@ const HeaderBar = () => {
                 aria-labelledby="dropdownMenuLink"
               >
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <a className="dropdown-item" href="/edit-wallet">
                     Edit wallet
                   </a>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <a className="dropdown-item" href="/delete-wallet">
                     Delete wallet
                   </a>
                 </li>
