@@ -153,7 +153,9 @@ code {
 .card-container {
   position: absolute;
   top: 5%;
-  left: 25%;
+  left: 27vw;
+  width: 40vw;
+  
 }
 
 .nav-tabs .nav-item.show .nav-link,
@@ -162,11 +164,11 @@ code {
 }
 
 .nav-link {
-  color: var(--color-222831);
+  color: var(--color-393E46);
 }
 
 .nav-link:hover {
-  color: var(--color-222831);
+  color: var(--color-393E46);
 }
 
 /* Card custom end */

@@ -12,12 +12,12 @@ const ByDay = () => {
                 <h1>01</h1>
               </div>
               <div className="d-flex flex-column px-2 py-1">
-                <div className="">
-                  <span>Saturday</span>
+                <div>
+                  <span className="text-secondary">Saturday</span>
                 </div>
                 <div className="fw-light">
-                  <span>April </span>
-                  <span>2023</span>
+                  <span className="text-secondary">April </span>
+                  <span className="text-secondary">2023</span>
                 </div>
               </div>
             </div>

@@ -4,7 +4,7 @@ import ByDay from "./ByDay";
 const Card = () => {
   return (
     <>
-      <div className="card-container py-3 bg-white rounded shadow">
+      <div className="card-container py-3 bg-white rounded shadow ">
         <ul
           className="nav nav-tabs d-flex justify-content-center"
           id="myTab"
@@ -12,7 +12,7 @@ const Card = () => {
         >
           <li className="nav-item" role="presentation">
             <button
-              className="nav-link active"
+              className="nav-link active text-uppercase"
               id="last-month-tab"
               data-bs-toggle="tab"
               data-bs-target="#last-month"
@@ -26,7 +26,7 @@ const Card = () => {
           </li>
           <li className="nav-item" role="presentation">
             <button
-              className="nav-link"
+              className="nav-link text-uppercase"
               id="this-month-tab"
               data-bs-toggle="tab"
               data-bs-target="#this-month"
@@ -40,7 +40,7 @@ const Card = () => {
           </li>
           <li className="nav-item" role="presentation">
             <button
-              className="nav-link"
+              className="nav-link text-uppercase"
               id="next-month-tab"
               data-bs-toggle="tab"
               data-bs-target="#next-month"
