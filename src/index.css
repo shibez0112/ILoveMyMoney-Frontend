@@ -69,6 +69,9 @@ code {
 .gap-15 {
   gap: 15px;
 }
+.gap-30 {
+  gap: 30px;
+}
 /* gap end*/
 
 /* button color */
@@ -124,7 +127,6 @@ code {
   padding: 0;
 }
 
-
 /* Header custom end*/
 
 /* Ant Design custom */
@@ -140,3 +142,17 @@ code {
   color: var(--color-00ADB5);
 }
 /* Ant Design custom end*/
+
+/* Card custom */
+.body-container {
+  position: relative;
+}
+
+.card-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 5%);
+}
+
+/* Card custom end */

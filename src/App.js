@@ -2,6 +2,7 @@ import { Layout } from "antd";
 import React from "react";
 import Sidebar from "./components/Sidebar/Sidebar";
 import HeaderBar from "./components/Header/HeaderBar";
+import Body from "./components/Body/Body";
 const { Header, Sider, Content } = Layout;
 
 const App = () => {
@@ -11,11 +12,8 @@ const App = () => {
     backgroundColor: "#FFFFFF",
   };
   const contentStyle = {
-    textAlign: "center",
-    minHeight: 120,
-    lineHeight: "120px",
-    color: "#fff",
     backgroundColor: "#eeeeee",
+    overflow:"auto",
   };
   const siderStyle = {
     backgroundColor: "#FFFFFF",
@@ -31,7 +29,9 @@ const App = () => {
         <Header style={headerStyle}>
           <HeaderBar />
         </Header>
-        <Content style={contentStyle}></Content>
+        <Content style={contentStyle}>
+          <Body />
+        </Content>
       </Layout>
     </Layout>
   );
