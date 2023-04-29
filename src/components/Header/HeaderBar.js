@@ -47,8 +47,12 @@ const HeaderBar = () => {
         </div>
       </div>
       <div className="d-flex justify-content-center align-items-center gap-3">
-        <BiFilterAlt size={25} />
-        <BiSearch size={25} />
+        <button className="btn">
+          <BiFilterAlt size={25} />
+        </button>
+        <button className="btn">
+          <BiSearch size={25} />
+        </button>
         <button
           className="btn btn-custom-blue m-2"
           style={{ fontSize: "14px" }}
