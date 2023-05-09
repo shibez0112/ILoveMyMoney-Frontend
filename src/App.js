@@ -2,7 +2,7 @@ import { Layout } from "antd";
 import React from "react";
 import Sidebar from "./components/Sidebar/Sidebar";
 import HeaderBar from "./components/Header/HeaderBar";
-import Body from "./components/Body/Body";
+import { Outlet } from "react-router-dom";
 const { Header, Sider, Content } = Layout;
 
 const App = () => {
@@ -30,7 +30,7 @@ const App = () => {
           <HeaderBar />
         </Header>
         <Content style={contentStyle}>
-          <Body />
+          <Outlet />
         </Content>
       </Layout>
     </Layout>

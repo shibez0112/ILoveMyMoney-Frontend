@@ -1,7 +1,7 @@
 import React from "react";
 import ByDay from "./ByDay";
 
-const Card = () => {
+const TransactionsCard = () => {
   return (
     <>
       <div className="card-container py-3 bg-white rounded shadow ">
@@ -102,4 +102,4 @@ const Card = () => {
     </>
   );
 };
-export default Card;
+export default TransactionsCard;

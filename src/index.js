@@ -11,6 +11,8 @@ import About from "./components/About/About";
 import Privacy from "./components/Privacy/Privacy";
 import Contact from "./components/Contact/Contact";
 import Signup from "./routes/Signup";
+import TransactionsCard from "./components/Transaction/TransactionsCard";
+import WalletsCard from "./components/Wallet/WalletsCard";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -18,14 +20,17 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path="/signin" element={<Signin />}></Route>
-        <Route path="/signup" element={<Signup/>}></Route>
+        <Route path="/signup" element={<Signup />}></Route>
         <Route path="/" element={<Home />}>
           <Route index element={<HomeBody />}></Route>
           <Route path="/about" element={<About />}></Route>
           <Route path="/privacy" element={<Privacy />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
         </Route>
-        <Route path="/user" element={<App />}></Route>
+        <Route path="/user" element={<App />}>
+          <Route index element={<TransactionsCard />}></Route>
+          <Route path="wallet" element={<WalletsCard />}></Route>
+        </Route>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
