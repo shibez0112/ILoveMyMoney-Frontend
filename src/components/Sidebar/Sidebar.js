@@ -3,6 +3,7 @@ import { BiUserCircle } from "react-icons/bi";
 import { TbReportAnalytics } from "react-icons/tb";
 import { React, useState } from "react";
 import { Menu } from "antd";
+import { useNavigate } from "react-router-dom";
 // ------------------------------------------------
 
 const items = [
@@ -29,16 +30,16 @@ const items = [
 ];
 
 const Sidebar = () => {
-  const [current, setCurrent] = useState("mail");
-  const onClick = (e) => {
-    console.log("click ", e);
-    setCurrent(e.key);
-  };
+  const navigate = useNavigate();
   return (
     <div className="vh-100">
       <Menu
-        onClick={onClick}
-        selectedKeys={[current]}
+        onClick={({ key }) => {
+          if (key === "signout") {
+          } else {
+            navigate(key);
+          }
+        }}
         mode="inline"
         items={items}
       />
